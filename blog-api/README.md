@@ -75,4 +75,4 @@ Tất cả endpoint đều có tiền tố `/api/`
 - **Lỗi 400 "title" is required:** Xảy ra khi test API Login nhưng lại dán nhầm vào URL Create Post. Xin hãy kiểm tra gõ đúng `/api/auth/login` hoặc `/api/posts` tùy mục đích.
 - **Lỗi 405 Method Not Allowed / 404 DELETE:** Khi chạy lệnh xóa, bạn không thể xóa chung `/api/posts`. Bắt buộc phải phải copy một mã `_id` cụ thể trên MongoDB dán vào đuôi URL.
 
-Hệ thống có Global Error Handling để trả lỗi theo format `{ "error": "mess..." }` chuẩn RESTful khi có sai sót (Sai Token, Thiếu trường, Dữ liệu không tồn tại...).
+Hệ thống có Global Error Handling để trả lỗi theo format `{ "error": "mess..." }` chuẩn RESTful khi có sai sót (Sai Token, Thiếu trường, Dữ liệu không tồn tại...)..
